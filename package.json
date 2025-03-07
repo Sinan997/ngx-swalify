@@ -1,5 +1,5 @@
 {
-  "name": "ngx-swalify",
+  "name": "ngx-swalify-repo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,8 +11,8 @@
   "private": true,
   "dependencies": {
     "@angular/common": "~19.2.0",
-    "@angular/core": "~19.2.0",
     "@angular/compiler": "~19.2.0",
+    "@angular/core": "~19.2.0",
     "@angular/forms": "~19.2.0",
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
@@ -32,6 +32,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.5.3",
     "typescript": "~5.8.0"
   }
 }
