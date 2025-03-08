@@ -10,9 +10,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "ngx-swalify": [
-        "./dist/ngx-swalify"
-      ]
+      "ngx-swalify": ["./dist/ngx-swalify"]
     },
     "skipLibCheck": true,
     "isolatedModules": true,

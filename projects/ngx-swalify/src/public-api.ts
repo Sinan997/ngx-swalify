@@ -3,4 +3,4 @@
  */
 
 export * from './lib/ngx-swalify.service';
-export * from './lib/ngx-swalify.component';
+export * from './lib/ngx-swalify-config';
