@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { from, map } from 'rxjs';
 import Swal, { SweetAlertOptions } from 'sweetalert2';
 import { SwalifyPayload } from './models/confirmation';
-import { getOptions, mapResponse } from './utils/swailfy-utils';
+import { getOptions, mapResponse } from './utils/swalify-utils';
 import { NgxSwalifyConfig } from './ngx-swalify-config';
 
 @Injectable({ providedIn: 'root' })
