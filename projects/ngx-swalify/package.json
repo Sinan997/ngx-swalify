@@ -1,6 +1,6 @@
 {
   "name": "ngx-swalify",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0",
@@ -9,5 +9,22 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sinan997/ngx-swalify"
+  },
+  "keywords": [
+    "angular",
+    "sweetalert2",
+    "ngx-swalify"
+  ],
+  "description": "An Angular library that simplifies SweetAlert2 usage with RxJS for easier and reactive alert handling.",
+  "author": {
+    "name": "Sinan Öztürk"
+  },
+  "license": "MIT"
 }
