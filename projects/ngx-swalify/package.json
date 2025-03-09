@@ -1,6 +1,6 @@
 {
   "name": "ngx-swalify",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0",
@@ -22,7 +22,7 @@
     "sweetalert2",
     "ngx-swalify"
   ],
-  "description": "An Angular library that simplifies SweetAlert2 usage with RxJS for easier and reactive alert handling.",
+  "description": "SweetAlert2 Integration for Angular.",
   "author": {
     "name": "Sinan Öztürk"
   },

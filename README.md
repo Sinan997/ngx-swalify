@@ -91,7 +91,7 @@ showAlert() {
 
 ```
 
-**Note:** If HTTP request fails, the `result.value` will be `null`. [Reference.](https://github.com/Sinan997/ngx-swalify/blob/main/projects/ngx-swalify/src/lib/utils/swailfy-utils.ts#L21-L27)
+**Note:** If HTTP request fails, the `result.value` will be `null`. [Reference.](https://github.com/Sinan997/ngx-swalify/blob/main/projects/ngx-swalify/src/lib/utils/swalify-utils.ts#L21-L27)
 
 **Note:** You don’t need to manually **unsubscribe** from the observable returned by `fire`. The **unsubscription** process is handled **automatically.**
 
