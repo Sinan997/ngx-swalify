@@ -59,33 +59,33 @@ protected readonly ngxSwalifyService = inject(NgxSwalifyService);
 protected readonly httpService = inject(HttpClient);
 
 httpDeletePost(id: number) {
-	return this.httpService.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  return this.httpService.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
 }
 
 showAlert() {
-	this.ngxSwalifyService
-		.fire({
-			options: {
-				title: 'Do you want to delete this post?',
-				confirmButtonText: 'Delete',
-				cancelButtonText: 'Cancel',
-				showCancelButton: true,
-				icon:  'warning',
-			},
-			preConfirmObservable: this.httpDeletePost(1),
-		})
-		.pipe(
-			filter((result) => result.isConfirmed && !!result.value),
-			switchMap(() =>
-				this.ngxSwalifyService.fire({
-					options: {
-						title: 'Post deleted successfully',
-						icon: 'success',
-					},
-				})
-			),
-		)
-		.subscribe();
+  this.ngxSwalifyService
+    .fire({
+      options: {
+        title: 'Do you want to delete this post?',
+        confirmButtonText: 'Delete',
+        cancelButtonText: 'Cancel',
+        showCancelButton: true,
+        icon:  'warning',
+      },
+      preConfirmObservable: this.httpDeletePost(1),
+    })
+    .pipe(
+      filter((result) => result.isConfirmed && !!result.value),
+      switchMap(() =>
+        this.ngxSwalifyService.fire({
+          options: {
+            title: 'Post deleted successfully',
+            icon: 'success',
+          },
+        })
+      ),
+    )
+    .subscribe();
 }
 
 
@@ -136,31 +136,31 @@ import { inject } from  '@angular/core';
 import { NgxSwalifyConfig } from  'ngx-swalify';
 
 export function initializer() {
-	const ngxSwalifyConfig = inject(NgxSwalifyConfig);
+  const ngxSwalifyConfig = inject(NgxSwalifyConfig);
 
-	ngxSwalifyConfig.confirm = {
-		title: 'Are you sure?',
-		text: "You won't be able to revert this!",
-		confirmButtonText: 'Yes',
-		cancelButtonText: 'No',
-		showCancelButton: true,
-		icon: 'warning',
-	};
+  ngxSwalifyConfig.confirm = {
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
+    showCancelButton: true,
+    icon: 'warning',
+  };
 
-	ngxSwalifyConfig.error = {
-		title: 'Oops...',
-		text: 'Something went wrong!',
-		icon: 'error',
-	};
+  ngxSwalifyConfig.error = {
+    title: 'Oops...',
+    text: 'Something went wrong!',
+    icon: 'error',
+  };
 
-	ngxSwalifyConfig.delete = {
-		title: 'Are you sure?',
-		text: 'This action cannot be undone!',
-		icon: 'warning',
-		showCancelButton: true,
-		confirmButtonText: 'Delete',
-		cancelButtonText: 'Cancel',
-	};
+  ngxSwalifyConfig.delete = {
+    title: 'Are you sure?',
+    text: 'This action cannot be undone!',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Delete',
+    cancelButtonText: 'Cancel',
+  };
 ```
 
 ### Usage
