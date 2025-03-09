@@ -132,8 +132,8 @@ export const appConfig: ApplicationConfig = {
 
 ```ts
 // initializer.ts
-import { inject } from  '@angular/core';
-import { NgxSwalifyConfig } from  'ngx-swalify';
+import { inject } from '@angular/core';
+import { NgxSwalifyConfig } from 'ngx-swalify';
 
 export function initializer() {
   const ngxSwalifyConfig = inject(NgxSwalifyConfig);
@@ -161,6 +161,8 @@ export function initializer() {
     confirmButtonText: 'Delete',
     cancelButtonText: 'Cancel',
   };
+  // ...
+}
 ```
 
 ### Usage
